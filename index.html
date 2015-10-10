@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: stretch;
+        }
+    </style>
+</head>
+<body>
+  <!-- hack to get the non-modularised WebVRManager & WebVR polyfill to play along -->
+  <script src="node_modules/three/three.min.js"></script>
+  <script src="js/webvr-polyfill.js"></script>
+  <script src="js/webvr-manager.js"></script>
+
+  <!-- the actual application, created by Browserify -->
+  <script src="app.js"></script>
+
+</body>
+</html>
